@@ -1,0 +1,110 @@
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 0 0 10px;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.board-col {
+  flex-shrink: 0;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button:hover:not(:disabled) {
+  background: #f0f0f0;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.info-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.panel {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.history {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.move-num {
+  color: #999;
+  margin-right: 2px;
+}
+
+.move {
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.move-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.move-list li {
+  font-weight: 500;
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.move-list li:last-child {
+  border-bottom: none;
+}
+
+.muted {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.status p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #444;
+}
